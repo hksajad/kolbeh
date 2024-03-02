@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <link rel="shurtcut icon" href="./img/icon-site.png" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ورود / ثبت نام</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="css/font-awesome-4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="css/aos.css" />
+    <link rel="stylesheet" href="css/login.css" />
+    <link rel="stylesheet" href="css/app.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+  </head>
+  <body data-bs-spy="scroll" data-bs-target=".navbar">
+    <!-- start navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-4 fixed-top"data-aos="fade-down">
+      <div class="container">
+        <a
+          class="navbar-brand d-flex justify-content-between align-items-center order-lg-0"
+          href="index.html"
+        >
+          <span class="text-uppercase fw-lighter ms-2">SHK</span>
+        </a>
+
+        <div class="order-lg-2 nav-btns">
+          <a href="./project.html" class="login">صفحه اصلی</a>
+        </div>
+
+        <button
+          class="navbar-toggler border-0"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navMenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse order-lg-1" id="navMenu">
+          <ul class="navbar-nav mx-auto text-center">
+            <li class="nav-item px-2 py-2">
+              <a class="nav-link text-uppercase text-dark" href="#home">خانه</a>
+            </li>
+            <li class="nav-item px-2 py-2">
+              <a class="nav-link text-uppercase text-dark" href="#collection"
+                >کالکشن
+              </a>
+            </li>
+            <li class="nav-item px-2 py-2">
+              <a class="nav-link text-uppercase text-dark" href="#special"
+                >ویژه</a
+              >
+            </li>
+            <li class="nav-item px-2 py-2">
+              <a class="nav-link text-uppercase text-dark" href="#blog">بلاگ</a>
+            </li>
+            <li class="nav-item px-2 py-2">
+              <a class="nav-link text-uppercase text-dark" href="#about"
+                >درباره ما</a
+              >
+            </li>
+            <li class="nav-item px-2 py-2 border-0">
+              <a class="nav-link text-uppercase text-dark" href="#contact"
+                >تماس با ما</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- login -->
+    <section class="login-form"data-aos="fade-down">
+      <div class="container">
+        <section class="wrapper">
+          <div class="form signup">
+            <header>ثبت نام</header>
+            <form action="#">
+              <input type="text" placeholder="نام و نام خانوادگی" required />
+              <input type="text" placeholder="آدرس ایمیل" required />
+              <input type="password" placeholder="رمز عبور" required />
+              <div class="checkbox">
+                <input type="checkbox" id="signupCheck" />
+                <label for="signupCheck"
+                  >من تمام شرایط و ضوابط را می پذیرم</label
+                >
+              </div>
+              <input type="submit" value="ثبت نام" />
+            </form>
+          </div>
+          <div class="form login">
+            <header>ورود</header>
+            <form action="#">
+              <input type="text" placeholder="آدرس ایمیل" required />
+              <input type="password" placeholder="رمز عبور" required />
+              <a href="#">رمز عبور را فراموش کرده اید؟ </a>
+              <input type="submit" value="ورود" />
+            </form>
+          </div>
+        </section>
+      </div>
+    </section>
+    <!-- start footer -->
+    <footer class="mt-5"data-aos="fade-down">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <div
+              class="logo-footer d-flex justify-content-center align-items-center"
+            >
+              <img src="img/icon-site.png" alt="img-footer" />
+              <h4 class="text-light">فروشگاه کلبه</h4>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="about text-light">
+              <h1 class="text-center">درباره فروشگاه</h1>
+              <p>
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله
+                در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد
+                نیاز
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="social-text">
+              <h1 class="text-light text-center">ما را دنبال کنید</h1>
+              <div class="social-icons d-flex justify-content-center">
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-telegram"></i></a>
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-whatsapp"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- js -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 120,
+        delay: 0,
+        duration: 700,
+        easing: "ease",
+        once: false,
+        mirror: false,
+        anchorPlacement: "top-bottom",
+      });
+    </script>
+    <script>
+      const wrapper = document.querySelector(".wrapper"),
+        signupHeader = document.querySelector(".signup header"),
+        loginHeader = document.querySelector(".login header");
+      loginHeader.addEventListener("click", () => {
+        wrapper.classList.add("active");
+      });
+      signupHeader.addEventListener("click", () => {
+        wrapper.classList.remove("active");
+      });
+    </script>
+  </body>
+</html>
